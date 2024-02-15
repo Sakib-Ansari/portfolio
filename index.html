@@ -1,36 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
-    <header>
+    <header class="header">
+        <a href="" class="logo">Sakib Coder</a>
+        <i class="fa fa-bars" aria-hidden="true" id="manu-icon"></i>
         <nav>
-            <div class="logo">
-                <a href="">Sakib</a>
-            </div>
             <div class="navbar">
-              <div class="link"><a href="">Home</a></div>
-              <div class="link"><a href="">About</a></div> 
-              <div class="link"><a href="">Projects</a></div>
-              <div class="link"><a href="">Services</a></div>
-              <div class="link"><a href="">Contact Me</a></div>
+                <a href="#Home" class="active">Home</a>
+                <a href="#About">About</a>
+                <a href="#Services">Services</a>
+                <a href="#Projests">Projests</a>
+                <a href="#Contact-Me">Contact Me</a>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <section class="container" id="Home">
         <div class="box">
-            <h1>Hi. i'm Najmussqib</h1>
+            <h1>Hi. i'm Najmussaqib</h1>
             <h3>Full Stack Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis aliquam officiis nihil ipsa amet doloribus maxime reprehenderit asperiores, veniam exercitationem atque, qui consequatur natus, architecto quod dolorum sit maiores.</p>
-            <div class="img">
-                <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis aliquam officiis nihil ipsa
+                amet doloribus maxime reprehenderit asperiores, veniam exercitationem atque, qui consequatur natus,
+                architecto quod dolorum sit maiores.
+            <p>
+            <div class="social-media">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <button class="btn">Download</button>
+        </div>
+        
+        <div class="boximg">
+            <img src="img/pixlr-image-generator-d11d5f7a-7f58-44a9-b50f-a72647f8766a.png" alt="">
+        </div>
+    </section>
+    <div class="about" id="About">
+        <div class="aboutimg">
+            <img src="img/pixlr-image-generator-087dd6da-8d70-4236-ab26-72023d4e7829.png" alt="">
+        </div>
+        <div class="abouttext">
+            <h2 class="hading">About <span>Me</span></h2>
+            <h3>Full Stack Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur blanditiis reprehenderit accusamus
+                doloribus expedita possimus quisquam ex maiores, hic odio quis. Sapiente at eveniet nihil adipisci quo
+                aspernatur, quasi molestiae.</p>
+            <button class="btn2">Read More</button>
+        </div>
+    </div>
+    <div class="Services-container" id="Services">
+        <h2 class="hading">Our <span>Services</span></h2>
+        <div class="Services">
+            <div class="Services-box">
+                <i class="fa fa-code"></i>
+                <h3>Web Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum modi obcaecati nostrum quo laboriosam
+                    rerum illum voluptatem corporis enim minima hic, ad impedit ex iste molestias. Fuga sed odit
+                    deleniti.</p>
+                <button class="btn2">Read More</button>
+            </div>
+            <div class="Services-box">
+                <i class="fa fa-code"></i>
+                <h3>Web Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum modi obcaecati nostrum quo laboriosam
+                    rerum illum voluptatem corporis enim minima hic, ad impedit ex iste molestias. Fuga sed odit
+                    deleniti.</p>
+                <button class="btn2">Read More</button>
+            </div>
+            <div class="Services-box">
+                <i class="fa fa-code"></i>
+                <h3>Web Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum modi obcaecati nostrum quo laboriosam
+                    rerum illum voluptatem corporis enim minima hic, ad impedit ex iste molestias. Fuga sed odit
+                    deleniti.</p>
+                <button class="btn2">Read More</button>
             </div>
         </div>
     </div>
-    
+    <div class="Projests-container" id="Projests">
+        <h2 class="hading">Our <span>Projests</span></h2>
+        <div class="Projests">
+            <div class="Projests-box">
+                <img src="img/project1.png" alt="">
+                <div class="project-leyer">
+                    <h3>Web Projest</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quasi iure rem, aspernatur iusto,
+                        incidunt dolor, sunt deleniti nobis officia obcaecati maxime amet suscipit! Consequatur facere
+                        quas aperiam laboriosam praesentium.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Projests-box">
+                <img src="img/project2.jpg" alt="">
+                <div class="project-leyer">
+                    <h3>Web Projest</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quasi iure rem, aspernatur iusto,
+                        incidunt dolor, sunt deleniti nobis officia obcaecati maxime amet suscipit! Consequatur facere
+                        quas aperiam laboriosam praesentium.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Projests-box">
+                <img src="img/project3.jpg" alt="">
+                <div class="project-leyer">
+                    <h3>Web Projest</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quasi iure rem, aspernatur iusto,
+                        incidunt dolor, sunt deleniti nobis officia obcaecati maxime amet suscipit! Consequatur facere
+                        quas aperiam laboriosam praesentium.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-container" id="Contact-Me">
+        <h2 class="hading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="content-box">
+                <input type="text" placeholder="Enter Your Name">
+                <input type="tel" placeholder="Enter Your Number">
+            </div>
+            <div class="content-box">
+                <input type="text" placeholder="Enter Your Email">
+                <!-- <input type="tel" placeholder="Enter Your Mobile Number"> -->
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Sand Message" class="btn2">
+        </form>
+    </div>
+    <footer>
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Najmussaqib |All Reserved</p>
+        </div>
+        <div class="footer-icon">
+            <a href=""><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
 </body>
-</html>  
+
+</html>
