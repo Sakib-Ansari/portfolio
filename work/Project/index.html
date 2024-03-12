@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+        body {
+            font-family: 'Alata', sans-serif;
+        }
+
+        .nav-item :hover {
+            color: #fd390e;
+        }
+
+        .btn {
+            background-color: #fd390e;
+            color: #fff;
+        }
+
+        .btn :hover {
+            background-color: #fd390e;
+            box-shadow: 1px#fd390e;
+        }
+
+        .Signin {
+            color: #fd390e;
+        }
+
+        .icon-box-media {
+            color: #fd390e;
+        }
+
+        .icon-box-title {
+            text-decoration: none;
+        }
+
+        .mb-1 {
+            color: #fd390e;
+        }
+    </style>
+    <header>
+        <div class="navbar navbar-expand-sm text-black  ">
+            <div class="container d-flex   ">
+                <ul class="navbar-nav navbar-collapse ">
+                    <a href="" class="navbar-brand text-dark px-4  ">
+                        <img src="logo/logo-dark.svg " width="116" alt=""></a>
+                    <li class="nav-item dropdown px-2  fw-bold ">
+                        <a href="#" class="nav-link dropdown-toggle  " data-bs-toggle="dropdown"> <i
+                                class="fa-solid fa-layer-group"></i> Demos</a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-building"></i> Real Estate
+                                    Demo</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-car"></i> Car Finder Demo</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bag-shopping"></i> Job Board
+                                    Demo</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> City Guide
+                                    Demo</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-house"></i> Main Page</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list"></i> Components</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-file-lines"></i>
+                                    Documentation</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown px-2 "><a href="" class="nav-link dropdown-toggle "
+                            data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Home v.1</a></li>
+                            <li><a class="dropdown-item" href="#">Home v.2</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown px-2 "><a href="" class="nav-link dropdown-toggle "
+                            data-bs-toggle="dropdown">Cotalog</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Property for Rent</a></li>
+                            <li><a class="dropdown-item" href="#">Property for Sale</a></li>
+                            <li><a class="dropdown-item" href="#">Single Property v.1</a></li>
+                            <li><a class="dropdown-item" href="#">Single Property v.2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown px-2 "><a href="" class="nav-link dropdown-toggle "
+                            data-bs-toggle="dropdown">Account</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Personal Info</a></li>
+                            <li><a class="dropdown-item" href="#">Password & Security</a></li>
+                            <li><a class="dropdown-item" href="#">My Properties</a></li>
+                            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                            <li><a class="dropdown-item" href="#">Reviews</a></li>
+                            <li><a class="dropdown-item" href="#">Notifications</a></li>
+                            <li><a class="dropdown-item" href="#">Sign In</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown px-2"><a href="" class="nav-link dropdown-toggle "
+                            data-bs-toggle="dropdown">Vendor</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Add Property </a></li>
+                            <li><a class="dropdown-item" href="#"> Property Promotion</a></li>
+                            <li><a class="dropdown-item" href="#"> Vendor Page: Properties</a></li>
+                            <li><a class="dropdown-item" href="#"> Vendor Page: Reviews</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown px-2 "><a href="" class="nav-link dropdown-toggle "
+                            data-bs-toggle="dropdown">Page</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Contacts</a></li>
+                            <li><a class="dropdown-item" href="#">Help Center</a></li>
+                            <li><a class="dropdown-item" href="#">404 Not Found</a></li>
+                        </ul>
+                    </li>
+                    <div class="ms-xxl-auto  d-flex ">
+                        <a href="" class="Signin nav-link px-3 text-center"><i class="fa-solid fa-user-plus"></i> Sign
+                            in</a>
+                        <a href="" class="btn border-danger shadow-sm  "><i class="fa-solid fa-plus"></i>
+                            Addproperty</a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container   ">
+        <div class="row pt-0 pt-md-2 pt-lg-0">
+            <div class="col-xl-5 col-lg-6 col-md-7 order-md-1 pt-xl-5 pe-lg-0 mb-3 text-md-start text-center ">
+                <div class="display-4 fw-bold mt-lg-5 mb-md-4 mb-3 mt-md-4 pt-md-4   ">
+                    Easy way to find
+                    <br>
+                    a perfect property
+                </div>
+                <p class="mb-5 fs-5">We provide a complete service for the sale, purchase or rental of real estate. We
+                    have been operating more than 10 years. Search millions of apartments and houses on Finder.</p>
+            </div>
+            <div class="col-xl-7 col-lg-6 col-md-5 order-md-2 mb-4 mb-lg-3">
+                <img src="img/hero-image.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+        <!-- <div class="col-lg-8 col-lg-10 mt-lg-n5  shadow "> jhggyyggy8t</div> -->
+    </div>
+    <!-- card l -->
+    <div class="container mb-5  ">
+        <div class="row row-cols-lg-6 row-cols-sm-3 row-cols-2 g-3 g-xl-4 ">
+            <div class="col"><a
+                    class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center text-decoration-none "
+                    href="#">
+                    <div class="icon-box-media rounded-circle mb-4 fa-2x mx-auto">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <h3 class="text-box-titel fa-lg mb-0">Houses</h3>
+                </a></div>
+            <div class="col"><a
+                    class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center text-decoration-none "
+                    href="#">
+                    <div class="icon-box-media rounded-circle mb-4 fa-2x mx-auto">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <h3 class="icon-box-title fa-lg mb-0">Apartments</h3>
+                </a></div>
+            <div class="col"><a
+                    class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center text-decoration-none  "
+                    href="#">
+                    <div class="icon-box-media rounded-circle mb-4 fa-2x mx-auto">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="icon-box-title fa-lg mb-0">Commercial</h3>
+                </a></div>
+            <div class="col"><a
+                    class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center text-decoration-none "
+                    href="#">
+                    <div class="icon-box-media rounded-circle mb-4 fa-2x mx-auto">
+                        <i class="fa-solid fa-registered"></i>
+                    </div>
+                    <h3 class="icon-box-title fa-lg mb-0">Daily rental</h3>
+                </a></div>
+            <div class="col"><a
+                    class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center text-decoration-none "
+                    href="#">
+                    <div class="icon-box-media rounded-circle mb-4 fa-2x mx-auto">
+                        <i class="fa-solid fa-house-circle-check"></i>
+                    </div>
+                    <h3 class="icon-box-title fa-lg  mb-0">New buildings</h3>
+                </a></div>
+            <div class="col">
+                <div class="dropdown h-100"><a
+                        class="icon-box card card-body h-100 border-0 shadow-sm card-hover text-center text-decoration-none "
+                        href="#" data-bs-toggle="dropdown">
+                        <div class="icon-box-media rounded-circle mb-4 fa-2x mx-auto">
+                            <i class="fa-solid fa-circle-chevron-down"></i>
+                        </div>
+                        <h3 class="icon-box-title fa-lg mb-0">More</h3>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end my-1"><a class="dropdown-item fw-bold" href="#"><i
+                                class="fa-solid fa-bed opacity-60 me-2"></i>Room</a><a class="dropdown-item fw-bold"
+                            href="#"><i class="fa-solid fa-briefcase opacity-60 me-2"></i>Office</a><a
+                            class="dropdown-item fw-bold" href="#"><i
+                                class="fa-solid fa-landmark fs-base opacity-60 me-2"></i>Land</a><a
+                            class="dropdown-item fw-bold" href="#"><i
+                                class="fa-solid fa-square-parking fs-base opacity-60 me-2"></i>Parking lot</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card -->
+    <div class="container mb-5   ">
+        <div class="row p-3  ">
+            <div class=" col-md-4 text-center shadow  rounded-2 ">
+                <div class="card-img-top  "><img src="img/buy.svg" width="256" alt=""></div>
+                <div class="card-body card-title  h3 fw-semibold p-3 ">Buy a property</div>
+                <div class="card-text  pb-4 ">Blandit lorem dictum in velit. Et nisi at faucibus mauris pretium enim.
+                    Risus sapien nisi aliquam egestas leo dignissim.</div>
+                <div class="btn border-danger  mb-3">Fide a Home</div>
+            </div>
+
+            <div class="col-md-4 text-center shadow rounded-2">
+                <div class="card-img-top  "><img src="img/sell.svg" width="256" alt=""></div>
+                <div class="card-body card-title h3 fw-semibold p-3">Sell a property</div>
+                <div class="card-text pb-4">Amet, cras orci justo, tortor nisl aliquet. Enim tincidunt tellus nunc,
+                    nulla arcu posuere quis. Velit turpis orci venenatis.</div>
+                <div class="btn border-danger  mb-3">Place an ad</div>
+            </div>
+            <div class="col-md-4 text-center shadow rounded-2">
+                <div class="card-img-top "><img src="img/rent.svg" width="256" alt=""></div>
+                <div class="card-body card-title  h3 fw-semibold p-3  ">Rent a property</div>
+                <div class="card-text pb-4 fs-sm ">Sed sed aliquet sed id purus malesuada congue viverra. Habitant quis
+                    lacus, volutpat natoque ipsum iaculis cursus.</div>
+                <div class=" btn border-danger  mb-3">Fide a rentel</div>
+            </div>
+        </div>
+
+        <div class="container d-flex justify-content-between   mt-5  ">
+            <h2 class="h3 fw-bold ">Top offers</h2>
+            <a href="" class="text-decoration-none text-black ">View All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- card offers -->
+        <div class="container  p-0  ">
+            <div class="d-flex ">
+                <div class="card m-2   ">
+                    <img src="img/01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="mb-1 fs-xs  text-uppercase ">For Rent</h6>
+                        <h5 class="card-title fs-5  fw-bold ">3-bed Apartment | 67 sq.m </h5>
+                        <p class="card-text">100-105 Ditmars Blvd Astoria, NY 11105</p>
+                        <i class="fa-solid fa-money-bills"> $1,629</i>
+                        <hr>
+                        <div class="text-center ">
+                            <i class="fa-solid fa-bed "> 2</i>
+                            <i class="fa-solid fa-bath ms-3 "> 2</i>
+                            <i class="fa-solid fa-car  ms-3 "> 3</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card m-2    ">
+                    <img src="img/02.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="mb-1 fs-xs  text-uppercase  ">For sale</h6>
+                        <h5 class="card-title fs-5  fw-bold ">Family Home| 120 sq.m</h5>
+                        <p class="card-text">67-04 Myrtle Ave Glendale, NY 11385</p>
+                        <i class="fa-solid fa-money-bills"> $84,000</i>
+                        <hr>
+                        <div class="text-center ">
+                            <i class="fa-solid fa-bed "> 4</i>
+                            <i class="fa-solid fa-bath ms-3 "> 2</i>
+                            <i class="fa-solid fa-car  ms-3 "> 2</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card m-2   ">
+                    <img src="img/03.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="mb-1 fs-xs text-uppercase   ">For rent</h6>
+                        <h5 class="card-title fs-5  fw-bold ">Greenpoint Rentals | 85 sq.m</h5>
+                        <p class="card-text">150-10 Castle Hill Ave Bronx, NY 10462</p>
+                        <i class="fa-solid fa-money-bills"> $1,330</i>
+                        <hr>
+                        <div class="text-center   ">
+                            <i class="fa-solid fa-bed "> 1</i>
+                            <i class="fa-solid fa-bath ms-3 "> 1</i>
+                            <i class="fa-solid fa-car  ms-3 "> 1</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card m-2   ">
+                    <img src="img/04.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="mb-1 fs-xs  text-uppercase  ">For sale</h6>
+                        <h5 class="card-title fs-5 fw-bold ">Studio | 32 sq.m</h5>
+                        <p class="card-text ">140-60 Beech Ave Flushing, NY 11355</p>
+                        <i class="fa-solid fa-money-bills "> $65,000</i>
+                        <hr>
+                        <div class="text-center ">
+                            <i class="fa-solid fa-bed "> 1</i>
+                            <i class="fa-solid fa-bath ms-3 "> 1</i>
+                            <i class="fa-solid fa-car  ms-3 "> 2</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Added -->
+            <div class="container d-flex  mt-5 mb-2 justify-content-between align-items-center ">
+                <h2 class="h3 fw-bold ">Added today</h2>
+                <ul class="nav nav-tabs d-none d-md-flex ps-lg-2 mb-0    ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-black " href="">Apartments</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-black " href="">Houses</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-black " href="">Rooms</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-black" href="">Commercial</a>
+                    </li>
+
+                </ul>
+                <a href="" class="text-decoration-none text-black ">View All <i class="fa-solid fa-arrow-right"></i></a>
+
+            </div>
+        </div>
+
+        <div class="row g-4 mb-5 ">
+            <div class="col-md-6 ">
+                <div class=" card bg-size-cover bg-position-center border-0 overflow-hidden h-100   "
+                    style="background-image: url(img/villa.jpg);" class="img-fluid ">
+                    <!-- <img src="img/home.jpg" alt=""> -->
+                    <span class="img-gradient-overlay"></span>
+                    <div class="card-body content-overlay pb-0">
+                        <div class="d-flex ">
+                            <span class="badge bg-success fs-sm me-2">Verified</span>
+                            <span class="badge bg-info fs-sm">New</span>
+                        </div>
+                    </div>
+
+                    <div class="card-footer content-overlay border-0 pt-0 pb-4">
+                        <div class="d-sm-flex justify-content-between align-items-end pt-5 mt-2 mt-sm-5">
+                            <a class="text-decoration-none text-light pe-2">
+                                <div class="fs-sm text-uppercase pt-2 mb-1">
+                                    <div class="fs-sm text-uppercase pt-2 mb-1">For rental</div>
+                                    <h3 class="h5 text-light mb-1">Luxury Rental Villa</h3>
+                                    <div class="fs-sm opacity-70">
+                                        <i class="fa-solid fa-location-dot">118-11 Sutphin Blvd Jamaica, NY 11434</i>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class=" btn btn-group ms-n2 ms-sm-0 mt-3"><a class="btn border-danger shadow-sm px-3"
+                                    href="#" style="height: 2.75rem;">From $3,850</a>
+                                <button class="btn bg-danger shadow-sm fs-sm" type="button"><i
+                                        class=" btn fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class=" card bg-size-cover bg-position-center border-0 overflow-hidden  mb-4">
+                    <!-- style="background-image: url(img/garden.jpg);" -->
+                    <img src="img/garden.jpg " class="img-fluid " alt="">
+                </div>
+                <div class=" card bg-size-cover bg-position-center border-0 overflow-hidden    ">
+                    <!-- style="background-image: url(img/villa.jpg);" -->
+                    <img src="img/home.jpg" class="img-fluid " alt="">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Сalculate -->
+        <div class="container mb-5 pb-2 pb-lg-4 ">
+            <div class="row align-items-center">
+                <div class="col-md-5 ">
+                    <img class="d-block mx-md-0 mx-auto mb-md-0 mb-4" src="img/calculator.svg" alt="">
+                </div>
+                <div class="col-xxl-6 col-md-7 text-md-start text-center">
+                    <h2 class="fw-bold ">Сalculate the cost of your property</h2>
+                    <p class="pb-2 fs-lg">Real estate appraisal is a procedure that allows you to determine the average
+                        market value of real estate (apartment, house, land, etc.). Сalculate the cost of your property
+                        with our new Calculation Service.</p>
+                    <a class="btn border-danger ps-3 shadow  " href="">
+                        Calculator <i class="fa-solid fa-calculator "></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Property -->
+        <div class="container d-flex justify-content-between  mt-5  ">
+            <h2 class="h3 fw-bold ">Search Property By City</h2>
+            <a href="" class="text-decoration-none text-black ">View All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="container ">
+            <div class="d-flex ">
+                <div class="card m-2  border-0   ">
+                    <img src="img/new york.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer ">
+                        <hr>
+                        <div class="card-title text-center fw-semibold ">
+                            <a href="#" class="text-decoration-none text-dark  "> New York</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card m-2 border-0    ">
+                    <img src="img/Abu Dhabi.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer ">
+                        <hr>
+                        <div class="card-title text-center fw-semibold ">
+                            <a href="#" class="text-decoration-none text-dark  "> Abu Dhabi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card m-2 border-0    ">
+                    <img src="img/United Kingdom.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer ">
+                        <hr>
+                        <div class="card-title text-center fw-semibold ">
+                            <a href="#" class="text-decoration-none text-dark  "> United Kingdom</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card m-2  border-0   ">
+                    <img src="img/china.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer ">
+                        <hr>
+                        <div class="card-title text-center fw-semibold ">
+                            <a href="#" class="text-decoration-none text-dark "> China</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Partners -->
+        <div class="container d-flex justify-content-between mt-5  ">
+            <h2 class="h3 fw-bold ">Our partners</h2>
+        </div>
+        <div class="container ">
+            <div class="d-flex  ps-5">
+                <div class="tns-item tns-slide-active">
+                    <a href="" class="swap-img">
+                        <img class="swap-to " src="img/01_color.svg" alt="logo" width="196">
+                        <!-- <img class="swap-from" src="img/01_gray.svg" alt="logo" width="196"> -->
+                    </a>
+                </div>
+                <div class="tns-item tns-slide-active">
+                    <a href="" class="swap-img">
+                        <img class="swap-to " src="img/02_color.svg" alt="logo" width="196">
+                        <!-- <img class="swap-from" src="img/01_gray.svg" alt="logo" width="196"> -->
+                    </a>
+                </div>
+                <div class="tns-item tns-slide-active">
+                    <a href="" class="swap-img">
+                        <img class="swap-to " src="img/03_color.svg" alt="logo" width="200">
+                        <!-- <img class="swap-from" src="img/01_gray.svg" alt="logo" width="196"> -->
+                    </a>
+                </div>
+                <div class="tns-item tns-slide-active">
+                    <a href="" class="swap-img">
+                        <img class="swap-to " src="img/04_color.svg" alt="logo" width="200">
+                        <!-- <img class="swap-from" src="img/01_gray.svg" alt="logo" width="196"> -->
+                    </a>
+                </div>
+                <div class="tns-item tns-slide-active">
+                    <a href="" class="swap-img">
+                        <img class="swap-to " src="img/05_color.svg" alt="logo" width="200">
+                        <!-- <img class="swap-from" src="img/01_gray.svg" alt="logo" width="196"> -->
+                    </a>
+                </div>
+                <div class="tns-item tns-slide-active">
+                    <a href="" class="swap-img">
+                        <img class="swap-to " src="img/06_color.svg" alt="logo" width="200">
+                        <!-- <img class="swap-from" src="img/01_gray.svg" alt="logo" width="196"> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Agennt -->
+        <div class="container d-flex justify-content-between mt-5 mb-4  ">
+            <h2 class="h3 fw-bold ">Top real estate agents</h2>
+        </div>
+        <div class="container mb-4">
+            <div class="row align-items-center ">
+                <div class="col-xl-4 d-none d-xl-block ">
+                    <img class="rounded-3" src="img/01 (1).jpg" alt="" width="400">
+                </div>
+                <div class="col-xl-4 d-none d-xl-block ">
+                    <img class="rounded-3" src="img/02 (1).jpg" alt="" width="400">
+                </div>
+                <div class="col-xl-4 col-md-7 col-sm-8 px-4 px-sm-3 px-md-0 ms-md-n4 mt-n5 mt-sm-0 py-3 ">
+                    <div class="card border-0 shadow-sm ms-sm-n5">
+                        <blockquote class="blockquote card-body">
+                            <h4 class="fw-bold ">"I will select the best accommodation for you"</h4>
+                            <p class="d-sm-none d-lg-block fs-6">Amet libero morbi venenatis ut est. Iaculis leo
+                                ultricies nunc id ante adipiscing. Vel metus odio at faucibus ac. Neque id placerat et
+                                id ut. Scelerisque eu mi ullamcorper sit urna. Est volutpat dignissim nec.</p>
+                            <footer class="d-flex justify-content-between">
+                                <div class="pe-3">
+                                    <a class="text-decoration-none" href="#">
+                                        <h6 class="mb-1">Floyd Miles</h6>
+                                        <div class="text-muted fw-normal fs-sm mb-3">Imperial Property Group Agent</div>
+                                    </a>
+                                    <a class="btn btn-icon  btn-xs shadow-sm rounded-circle me-2 mb-2" href="#">
+                                        <i class="fa-brands fa-facebook"></i></a>
+                                    <a class="btn btn-icon  btn-xs shadow-sm rounded-circle me-2 mb-2" href="#">
+                                        <i class="fa-brands fa-twitter"></i></a>
+                                    <a class="btn btn-icon  btn-xs shadow-sm rounded-circle me-2 mb-2" href="#">
+                                        <i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <div>
+                                    <span class="star-rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+
+                                    </span>
+                                    <div class="text-muted fs-sm mt-1">45 reviews</div>
+                                </div>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <footer class=" footer bg-body-secondary pt-5 ">
+            <div class="container container pt-lg-4 pb-4 ">
+                <div class="row mb-5 pb-md-3 pb-lg-4">
+                    <div class="col-lg-6 mb-lg-0 mb-4">
+                        <div class="d-flex flex-sm-row flex-column justify-content-between mx-n2">
+                            <div class="mb-sm-0 mb-4 px-2">
+                                <a class="d-inline-block mb-4" href="#">
+                                    <img src="logo/logo-dark.svg" width="116" alt="logo"></a>
+                                <ul class="nav flex-column mb-sm-4 mb-2">
+                                    <li class="nav-item mb-2">
+                                        <a class="nav-link p-0 fw-normal text-black " href="#">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            </i>example@email.com</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0 fw-normal text-black" href="#">
+                                            <i class="fa-solid fa-mobile-screen-button"></i> (406)555-0120</a>
+                                    </li>
+                                </ul>
+
+                                <div class="pt-2">
+                                    <a class="btn btn-icon  btn-xs shadow-sm rounded-circle me-2 mb-2" href="#">
+                                        <i class="fa-brands fa-facebook"></i></a>
+                                    <a class="btn btn-icon  btn-xs shadow-sm rounded-circle me-2 mb-2" href="#">
+                                        <i class="fa-brands fa-twitter"></i></a>
+                                    <a class="btn btn-icon btn-xs shadow-sm rounded-circle me-2 mb-2" href="#">
+                                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                                    <a class="btn btn-icon btn-xs shadow-sm rounded-circle me-2 mb-2" href="#">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="mb-sm-0 mb-4 px-2">
+                                <h4 class="h5 fw-semibold ">Quick Links</h4>
+                                <ul class="nav flex-column ">
+                                    <li class="nav-item mb-2 "><a class="nav-link p-0 fw-normal  text-dark" href="#">Buy
+                                            a
+                                            property</a></li>
+                                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal  text-dark" href="#">Sell
+                                            a
+                                            property</a></li>
+                                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal  text-dark" href="#">Rent
+                                            a property</a></li>
+
+                                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal  text-dark" href="#">Сalculate
+                                            
+                                             your property</a></li>
+                                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal  text-dark" href="#">Top
+                                            offers</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal  text-dark" href="#">Top
+                                            cities</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="px-2">
+                                <h4 class="h5 fw-semibold ">About</h4>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal text-dark" href="#">About
+                                            Us</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal text-dark" href="#">Our
+                                            agents</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal text-dark" href="#">Help
+                                            &amp;
+                                            support</a></li>
+                                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal text-dark"
+                                            href="#">Contacts</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal text-dark"
+                                            href="#">News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 offset-xl-1">
+                        <h4 class="h5 fw-semibold ">Recent Posts</h4>
+                        <article class="d-flex align-items-start" style="max-width: 640px;">
+                            <a class="d-none d-sm-block flex-shrink-0 me-sm-4 mb-sm-0 mb-3" href="#">
+                                <img class="rounded-3" src="img/th01.jpg" width="100" alt=""></a>
+                            <div>
+                                <h6 class="mb-1 fs-xs fw-normal text-uppercase ">Home improvement</h6>
+                                <h5 class="mb-2 fs-base">
+                                    <a class="nav-link" href="#">Your Guide to a Smart Apartment Searching</a>
+                                </h5>
+
+                                <p class="mb-2 fs-sm">Mi justo, varius vitae cursus ipsum sem massa amet pellentesque.
+                                    Ipsum enim sit nulla ridiculus semper nam...</p>
+                                <a class="nav-link nav-link-muted d-inline-block me-3 p-0 fs-xs fw-normal" href="#">
+                                    <i class="fa-regular fa-calendar-days"></i> Dec 4</a>
+                                <a class="nav-link nav-link-muted d-inline-block me-3 p-0 fs-xs fw-normal" href="#">
+                                    <i class="fa-regular fa-comment"></i>2 comments</a>
+                            </div>
+
+                        </article>
+                        <hr class="text-dark opacity-10 my-4">
+                        <article class="d-flex align-items-start" style="max-width: 640px;">
+                            <a class="d-none d-sm-block flex-shrink-0 me-sm-4 mb-sm-0 mb-3" href="#">
+                                <img class="rounded-3" src="img/th02.jpg" width="100" alt=""></a>
+                            <div>
+                                <h6 class="mb-1 fs-xs fw-normal text-uppercase ">Tips &amp; advice</h6>
+                                <h5 class="mb-2 fs-base"><a class="nav-link" href="#">Top 10 Ways to Refresh Your
+                                        Space</a></h5>
+                                <p class="mb-2 fs-sm">Volutpat, orci, vitae arcu feugiat vestibulum ultricies nisi,
+                                    aenean eget. Vitae enim, tellus tempor consequat mi vitae...</p>
+                                <a class="nav-link nav-link-muted d-inline-block me-3 p-0 fs-xs fw-normal" href="#">
+                                    <i class="fa-regular fa-calendar-days"></i> Nov 23</a>
+                                <a class="nav-link nav-link-muted d-inline-block me-3 p-0 fs-xs fw-normal" href="#">
+                                    <i class="fa-regular fa-comment"></i> No comments</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-dark rounded-3">
+                <div
+                    class="col-xxl-10 col-md-11 col-10 d-flex flex-md-row flex-column-reverse align-items-md-end align-items-center mx-auto px-0">
+                    <img class="flex-shrink-0 mt-md-n5 me-md-5" src="img/mobile.svg" width="240" alt="#">
+                    <div
+                        class="align-self-center d-flex flex-lg-row flex-column align-items-lg-center pt-md-3 pt-5 ps-xxl-4 text-md-start text-center">
+                        <div class="me-md-5">
+                            <h4 class="text-light">Download Our App</h4>
+                            <p class="mb-lg-0 text-light">Find everything you need for buying, selling &amp; renting
+                                property in our new Finder App!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
