@@ -25,12 +25,10 @@
         </nav>
     </header>
     <section class="container" id="Home">
-        <div class="box">
+        <div class="box" >
             <h1>Hi. i'm Najmussaqib</h1>
             <h3>Full Stack Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis aliquam officiis nihil ipsa
-                amet doloribus maxime reprehenderit asperiores, veniam exercitationem atque, qui consequatur natus,
-                architecto quod dolorum sit maiores.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur blanditiis reprehenderit accusamus doloribus expedita possimus quisquam ex maiores, hic odio quis. Sapiente at eveniet nihil adipisci quo aspernatur, quasi molestiae.
             <p>
             <div class="social-media">
                 <a href="https://www.facebook.com/mohd.sakib.75457081?mibextid=ZbWKwL" target="_blank">
@@ -52,24 +50,21 @@
         </div>
     </section>
     <div class="about" id="About">
-        <div class="aboutimg">
-            <img src="img/pixlr-image-generator-087dd6da-8d70-4236-ab26-72023d4e7829.png" alt="">
-        </div>
         <div class="abouttext">
             <h2 class="hading">About <span>Me</span></h2>
             <h3>Full Stack Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur blanditiis reprehenderit accusamus
-                doloribus expedita possimus quisquam ex maiores, hic odio quis. Sapiente at eveniet nihil adipisci quo
-                aspernatur, quasi molestiae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur blanditiis reprehenderit accusamus doloribus expedita possimus quisquam ex maiores, hic odio quis. Sapiente at eveniet nihil adipisci quo aspernatur, quasi molestiae.</p>
             <button class="btn2">Read More</button>
+        </div>
+        <div class="aboutimg">
+            <img src="img/pixlr-image-generator-087dd6da-8d70-4236-ab26-72023d4e7829.png" alt="">
         </div>
     </div>
     <div class="skill-container" id="Skills">
         <h2 class="hading">My <span>Skills</span></h2>
-        <div class="skill-row">
+        <div class="skill-row" >
             <div class="skill-col">
                 <h3 class="titel">Coding Skills</h3>
-
                 <div class="skill-box">
                     <div class="skill-name">
                         <div class="skill-progress">
@@ -155,16 +150,16 @@
     </div>
     <div class="content-container" id="Contact-Me">
         <h2 class="hading">Contact <span>Me</span></h2>
-        <form action="#">
+        <form action="#" id="form" onsubmit=" return data()">
             <div class="content-box">
-                <input type="text" placeholder="Enter Your Name">
-                <input type="tel" placeholder="Enter Your Number">
+                <input type="text" placeholder="Enter Your Name" id="username" >
+                <input type="tel" placeholder="Enter Your Number" id="Number" >
             </div>
             <div class="content-box">
-                <input type="text" placeholder="Enter Your Email">
+                <input type="text" placeholder="Enter Your Email" id="email" >
                 <!-- <input type="tel" placeholder="Enter Your Mobile Number"> -->
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="" id="Message" cols="30" rows="10" placeholder="Your Message" ></textarea>
             <input type="submit" value="Sand Message" class="btn2">
         </form>
     </div>
@@ -176,6 +171,8 @@
             <a href=""><i class="fa-solid fa-arrow-up"></i></a>
         </div>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/types@0.1.1/index.min.js"></script>
     <script src="script.js"></script>
 </body>

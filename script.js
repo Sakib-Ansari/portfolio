@@ -1,10 +1,14 @@
+// Toggle Icon Navber //
+
 let menuIcon = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('fa-bars');
+    menuIcon.classList.toggle('fa-xmark');
     navbar.classList.toggle('active');
 };
+
+// scroll sections active links //
 
 let sections = document.querySelectorAll("section");
 let navlinks = document.querySelectorAll("header nav a");
@@ -16,14 +20,48 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
-        navlinks.forEach(links =>{
-            links.classList.remove('active');
-            document.querySelector('header nav a[href*='+ id +']').classList.add('active');
-        });
+        if (top >= offset && top < offset + height) {
+            navlinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            });
         };
     });
-    
+
+    //   Sticky Navber  //
+
     let header = document.querySelector('header');
-      header.classList.toggle('sticky', window.scrollY > 100);
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    //   Remove Toggle Icon Navber//
+
+    menuIcon.classList.remove('fa-xmark');
+    navbar.classList.remove('active');
 };
+
+    // Form Submit //
+function data() {
+    let form = document.getElementById('form');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        let username = document.querySelector('#username').value;
+        console.log(username);
+
+        let Number = document.querySelector('#Number').value;
+        console.log(Number);
+
+        let email = document.querySelector('#email').value;
+        console.log(email);
+
+        let Message = document.querySelector('#Message').value;
+        console.log(Message);
+
+        if (username === "" || Number === "" || email === "" || Message === "") {
+            alert("Please fill in all the fields.");
+            return false;
+        } else {
+            true;
+        }
+    });
+}
